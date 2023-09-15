@@ -48,11 +48,12 @@ function Dashboard() {
       </div>
 
       <div className='headercontents'>
-        <div>
-            <h1>i am lonely chisale</h1>
-            <p>A professional  cyber security and software developer personnel.<br></br>
-                 I aim at developing innovative solutions for making sure that all computer systems and information are well secured from cyber-attacks.</p>
-        </div>
+      <div>
+    <h1>Hello, I'm lonely Chisale</h1>
+    <p>I'm a dedicated professional with expertise in cybersecurity and software development.</p>
+    <p>My mission is to create innovative solutions that ensure the utmost security of computer systems and information, safeguarding them against cyber threats.</p>
+</div>
+
 
         <div>
             <h3>my projects</h3>
@@ -72,17 +73,25 @@ function Dashboard() {
       <div>
         <h3>who am i ?</h3>
         <h1>about</h1>
-        <p>•	Conducted market research and competitor analysis using SEMrush and SpyFu tools to identify trends and opportunities, resulting in data-driven marketing decisions.
-•	Implemented and managed Google Ads campaigns, optimizing keyword targeting and ad copy to achieve a 20% increase in website traffic and conversions.
- by 25%.
-</p>
+        <p>
+        I am a versatile professional with a strong foundation in both software development and cybersecurity. My passion lies in creating secure and innovative solutions in the ever-evolving digital landscape. Here's a glimpse of my journey:
+    </p>
 
-<p>•	Conducted market research and competitor analysis using SEMrush and SpyFu tools to identify trends and opportunities, resulting in data-driven marketing decisions.
-•	Implemented and managed Google Ads campaigns, optimizing keyword targeting and ad copy to achieve a 20% increase in website traffic and conversions.
-•	Created and managed social media marketing campaigns, using Hootsuite for scheduling and analytics, increasing engagement by 40% and growing the client's social media following by 25%.
-</p>
+    <h2>Software Development</h2>
+    <ul>
+        <li>Proficient in multiple programming languages, including Python, Java, and C++, with a focus on building efficient and scalable software applications.</li>
+        <li>Experienced in full-stack development, from designing user interfaces to managing databases and server-side logic.</li>
+        <li>Committed to writing clean, maintainable code and staying up-to-date with the latest industry trends and best practices.</li>
+    </ul>
+
+    <h2>Cybersecurity</h2>
+    <ul>
+        <li>Dedicated to safeguarding digital assets and data against cyber threats through proactive risk assessment and robust security measures.</li>
+        <li>Skilled in conducting penetration testing and vulnerability assessments to identify and address potential weaknesses in systems and networks.</li>
+        <li>Well-versed in compliance frameworks and standards, including NIST, ISO 27001, and GDPR, to ensure regulatory adherence.</li>
+    </ul>
 <div>
-<a href=''> my resume</a>
+<a href='https://drive.google.com/file/d/1OfunycKN_s4snMIAtJ_Ex84t9J-p6q4D/view'> my curriculum vitae</a>
 </div>
 
       </div>
@@ -105,8 +114,8 @@ function Dashboard() {
                 <h2>web app</h2>
               </div>
               <div className='cardbody'>
-                <p>Conducted market research and competitor analysis using SEMrush and SpyFu tools to identify trends and opportunities, resulting in data-driven marketing decisions.
-•	Implemented and managed using Hootsuite for schedul</p>
+              <p>Utilizing cutting-edge technologies such as HTML5, CSS3, and JavaScript to create dynamic 
+                and responsive web applications.</p>
               </div>
             </div>
             <div>
@@ -117,8 +126,8 @@ function Dashboard() {
                 <h2>mobile app development</h2>
               </div>
               <div className='cardbody'>
-                <p>Conducted market research and competitor analysis using SEMrush and SpyFu tools to identify trends and opportunities, resulting in data-driven marketing decisions.
-•	Implemented and managed Google  Hootsuite for schedul</p>
+              <p>Building mobile applications for various platforms using HTML5, CSS3, 
+                and other relevant technologies.</p>
               </div>
             </div>
             </div>
@@ -129,8 +138,9 @@ function Dashboard() {
                 <h2>desktop app development</h2>
               </div>
               <div className='cardbody'>
-                <p>Conducted market research and competitor analysis using SEMrush and SpyFu tools to identify trends and opportunities, resulting in data-driven marketing decisions.
-•	Implemented and managed Google Ads for schedul</p>
+              <p>Creating desktop applications with 
+                <br></br>a focus on user-friendly 
+                interfaces and efficient functionality.</p>
               </div>
             </div>
             </div>
@@ -144,8 +154,8 @@ function Dashboard() {
                 <h2>penetration testing</h2>
               </div>
               <div className='cardbody'>
-                <p>Conducted market research and competitor analysis using SEMrush and SpyFu tools to identify trends and opportunities, resulting in data-driven marketing decisions.
-•	Implemented and managed Google Ads  schedul</p>
+              <p>Performing thorough penetration tests using industry-standard tools and methodologies to 
+                identify vulnerabilities in systems and networks.</p>
               </div>
             </div>
             <div className='card'>
@@ -154,8 +164,8 @@ function Dashboard() {
                 <h2>vulnerability assesment</h2>
               </div>
               <div className='cardbody'>
-                <p>Conducted market research  optimizing keyword targeting and ad copy to achieve a 20% increase in website traffic and conversions.
-•	Created and managed social media marketing campaigns, using Hootsuite for schedul</p>
+              <p>Conducting comprehensive vulnerability assessments to pinpoint weaknesses in IT 
+                infrastructures and develop mitigation strategies.</p>
               </div>
             </div>
             <div className='card'>
@@ -164,8 +174,8 @@ function Dashboard() {
                 <h2>vulnerability patching</h2>
               </div>
               <div className='cardbody'>
-                <p>Conducted market research and competitor analysis using SEMrush and SpyFu tools to identify trends and opportunities, resulting in data-driven marketing decisions.
-•	Implemented and managed Google Ads for schedul</p>
+              <p>Implementing prompt and effective vulnerability patching 
+                solutions to secure systems and prevent potential breaches.</p>
               </div>
             </div>
           </div>
@@ -218,8 +228,46 @@ function Dashboard() {
       </div>
     </div>
   </div>
+
+  <div className='footer'>
+    <div>
+      <h1>in need of me ?</h1>
+    <div className='footercontent'>
+      <div>
+        <h3>contact details</h3>
+        <i>email: lonelyfchisale@gmail.com</i><br></br>
+        <i>phone: +265 886 691 384 / +265 988 170 023</i>
+      </div>
+
+      <div className='contactform'>
+        <form>
+          <h1>send message</h1>
+          <div className='formgroup'>
+            <label>email</label>
+            <input type='text'></input>
+          </div>
+
+          <div className='formgroup'>
+            <label>subject</label>
+            <input type='text'></input>
+          </div>
+
+          <div className='formgroup'>
+            <label>message</label>
+            <textarea></textarea>
+          </div>
+
+          <div className='formgroup'>
+            <input type='submit' value='send message'></input>
+          </div>
+        </form>
+      </div>
+    </div>
+    </div>
+  </div>
  
 </div>
+
 
     </div>
   );
