@@ -1,0 +1,337 @@
+body{
+    overflow-x: hidden;
+}
+.dashboard{
+    background-color: whitesmoke;
+    width: 100vw;
+    min-height: auto;
+
+   
+    
+}
+.dashboard .headerdiv{
+    height: 85vh;
+    background-color: wheat;
+    top: 0;
+    position: absolute;
+    display: flex;
+    width: 100vw; 
+    box-shadow: 0px 0px 10px 10px wheat;
+}
+
+ .header{
+    position: fixed;
+    width: 100vw;   
+    top: 0;
+    display: flex;
+    padding: 10px;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px wheat;
+}
+
+.dashboard .headerdiv .header h1{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    color: wheat;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Baloo Paaji, cursive;
+    margin-left: 20px;
+}
+.dashboard .headerdiv .header ul{
+    position: absolute;
+   right: 0;
+   margin-right: 80px;
+   text-transform: capitalize;
+   display: flex;
+}
+.dashboard .headerdiv .header ul li{
+    list-style-type: none;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.dashboard .headerdiv .header ul li:last-child{
+    background-color: gray;
+    padding: 10px;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+h4{
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
+    font-size: 50px;
+    margin-top: 0;
+    color: gray;
+    display: none;
+}
+.headercontents{
+    display: flex;
+    margin-left: 50px;
+    margin-top: 200px;
+    color: gray;
+    position: relative;
+}
+.headercontents div:nth-child(1){
+    width: 500px;
+    max-width: 90%;
+}
+.headercontents div:nth-child(2){
+    margin-top: 80px;
+    margin-left: 50px;
+    width: 200px;
+    text-align: center;
+    
+}
+.headercontents div:nth-child(2) h3{
+    background-color: rgb(134, 128, 128);
+    color: white;
+    padding: 10px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    border-radius: 10px;
+    
+}
+.headercontents h1{
+    text-transform: capitalize;
+    color: gray;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Baloo Paaji, cursive;
+}
+.content{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top:  85vh;;
+    width: 100%;
+}
+.content .justifycontent{
+    width: 90%;
+}
+.content .justifycontent .about{
+    margin-top: 70px;
+    display: flex;
+   
+    
+}
+.content .justifycontent .about div:nth-child(1){
+    width: 500px;
+    height: 700px;
+    max-height: 90%;
+}
+.content .justifycontent .about div img{
+    position: relative;
+    width: inherit;
+    height: inherit;
+    image-orientation: flip;
+    image-orientation: from-image;
+    shape-image-threshold: inherit;
+    align-items: center;
+    background-size: contain;
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+}
+.content .justifycontent .about div:nth-child(2){
+    margin-left: 50px;
+    
+    
+}
+.content .justifycontent .about div h3{
+    color: black;
+    text-transform: capitalize;
+    opacity: 0.7;
+  
+}
+.content .justifycontent .about div h1{
+    text-transform: uppercase;
+    color: wheat;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Baloo Paaji, cursive;
+}
+    .content .justifycontent .about div:nth-child(2) div{
+        margin-top: 70px;
+        
+    }
+.content .justifycontent .about div:nth-child(2) div a{
+    border:1px solid wheat;
+    border-radius: 10px;
+    color: wheat;
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-transform: capitalize;
+    top: 100px;
+}
+.services{
+    text-align: center;
+    margin-top: 100px;
+    
+}
+.services .servicesconted h3{
+    color: black;
+    text-transform: capitalize;
+    opacity: 0.7;
+   
+}
+.services .servicesconted h1{
+    text-transform: uppercase;
+    color: wheat;
+    font-family: Baloo Paaji, cursive;
+
+}
+.services .servicesconted .listservices h1{
+    color: gray;
+    margin-top: 20px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    opacity: 0.5;
+   
+}
+.services .servicesconted .listservices .row{
+    display: flex;
+}
+.services .servicesconted .listservices .row .card{
+    border: 1px solid silver;
+    padding: 10px;
+    margin-left: 20px;
+    width: 350px;
+}
+.services .servicesconted .listservices .row .card .cardheader{
+    text-transform: capitalize;
+    color: wheat;
+    font-family: Baloo Paaji, cursive;
+}
+.services .servicesconted .listservices .row .card .cardheader h3{
+    font-size: 80px;
+    padding: 0;
+    color: gray;
+
+    
+}
+.services .servicesconted .listservices .row .card .cardheader h2{
+  
+    margin-top: -80px;
+}
+.services .servicesconted .listservices .row .card .cardbody{
+    display: block;
+    color: gray;
+}
+
+.portifolio{
+    margin-top: 200px;
+    text-align: center;
+}
+.portifolio .portifoliocontent h3{
+    color: black;
+    text-transform: capitalize;
+    opacity: 0.7;
+}
+.portifolio .portifoliocontent h1{
+    text-transform: uppercase;
+    color: wheat;
+    font-family: Baloo Paaji, cursive;
+
+}
+.listportifolios .row{
+    display: block;
+    margin-top: 20px;
+}
+.listportifolios .row .card{
+    display: flex;
+    margin-top: 30px;
+}
+.listportifolios .row .card img{
+    width: 500px;
+    height: 400px;
+}
+.listportifolios .row .card div{
+    width: 500px;
+    margin-left: 20px;
+    text-align: left;
+}
+.listportifolios .row .card h1{
+    color: gray;
+    margin-left: 25px;
+}
+.listportifolios .row .card i{
+    text-transform: capitalize;
+    color: gray;
+}
+.listportifolios .row .card p{
+    margin-top: 10px;
+   
+}
+
+@media screen and (max-width:900px) {
+    .dashboard .headerdiv .header ul{
+        display: none;
+    }
+    .headercontents{
+        display: block;
+        width: 100%;
+        min-width: 90%;
+    }
+    .headercontents div:nth-child(2){
+        margin-left: 0;
+        width: 100px;
+        align-items: center;
+        text-align: center;
+    }
+    .headercontents div:nth-child(2) h3{
+        width: 200px;
+    }
+    .content .justifycontent .about{
+        display: block;
+       text-align: center;
+    }
+    .content .justifycontent .about div:nth-child(1){
+        width: inherit;
+    }
+    .content .justifycontent .about div img{
+     
+        border-top-right-radius: 0%;
+        border-bottom-left-radius: 0%;
+    }
+    .content .justifycontent .about div:nth-child(1){
+        width: 100%;
+    }
+    .content .justifycontent .about div:nth-child(2){
+        margin-left: 0;
+    }
+    .dashboard .headerdiv{
+        justify-content: center;
+    }
+    .services .servicesconted .listservices .row{
+        display: block;
+    }
+    .services .servicesconted .listservices .row .card{
+        width: inherit;
+        margin-top: 20px;
+    }
+    h4{
+        display: block;
+    }
+    .listportifolios .row .card{
+        display: block;
+        
+    }
+    .listportifolios .row .card img{
+       width: 100%;
+    }
+    .listportifolios .row .card div{
+      width: 100%;
+      margin-left: 0;
+      text-align: center;
+    }
+    
+
+    
+    
+
+    
+
+    
+}
