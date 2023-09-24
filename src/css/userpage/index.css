@@ -225,10 +225,46 @@ h4{
     color: gray;
 }
 
-.portifolio{
-    margin-top: 200px;
+
+.experiences{
+    background-color: rgba(248, 214, 151, 0.222);
+    margin-top: 150px;
+    padding: 20px;
+    color: gray;
+    padding-bottom: 40px;
+    font-family: serif;
+}
+.experiences .experiencescontents h1{
     text-align: center;
-    margin-bottom: 600px;
+    text-transform: capitalize;
+    color: gray;
+    font-family: Baloo Paaji, cursive;
+    font-weight: 700;
+}
+.experiences .experiencescontents .row{
+    display: flex;
+}
+.experiences .experiencescontents .row .card{
+    border: 1px solid gray;
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    text-transform: capitalize;
+    opacity: 0.7;
+}
+.experiences .experiencescontents .row .card h3 span{
+    font-size: 30px;
+    font-family: Baloo Paaji, cursive;
+    color: gray;
+}
+.experiences .experiencescontents .row .card:nth-child(2){
+    margin-left: 20px;
+}
+
+.portifolio{
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 700px;
 }
 .portifolio .portifoliocontent h3{
     color: gray;
@@ -288,11 +324,14 @@ h4{
     font-family: Baloo Paaji, cursive;
 }
 .footer .footercontent{
-    display: flex;
     width: 90%;
     margin-bottom: 30px;
     padding: 10px;
     
+}
+.justigycontent{
+    display: flex;
+
 }
 .footer .footercontent div{
     text-transform: capitalize;
@@ -306,9 +345,19 @@ h4{
     color: gray;
     opacity: 0.7;
 }
+.contactdetails{
+    width: 500px;
+}
+.contactform{
+   
+    border-left: 1px solid gray;
+    padding-left: 10px;
+}
+.contactform h3{
+    text-align: center;
+}
 
 .footer .footercontent form{
-    margin-left: 10%;
     width: 600px;
     padding: 20px;
     margin-top: -10px;
@@ -321,13 +370,14 @@ h4{
     margin-top: -20px;
     position: absolute;
     text-transform: capitalize;
+    font-family: serif;
     color: gray;
     z-index: 500;
 }
 .footer .footercontent form .formgroup input,textarea{
     width:98%;
     outline: unset;
-    height: 20px;
+    height: 30px;
     color: gray;
 }
 .footer .footercontent form .formgroup textarea{
@@ -345,10 +395,10 @@ h4{
 }
 @media screen and (max-width:900px) {
     .dashboard .headerdiv{
-        height: 60vh;
+        height: 80vh;
     }
     .content{
-        margin-top: 65vh;
+        margin-top: 85vh;
     }
     .dashboard .headerdiv .header ul{
         display: none;
@@ -396,11 +446,22 @@ h4{
         width: inherit;
         margin-top: 20px;
     }
+    .experiences .experiencescontents .row{
+        display: block;
+    }
+    .experiences .experiencescontents .row .card{
+        width: inherit;
+    }
+    .experiences .experiencescontents .row .card:nth-child(2){
+        margin-left: 0;
+        margin-top: 20px;
+
+    }
     h4{
         display: block;
     }
     .portifolio{
-        margin-bottom: 800px;
+        margin-bottom: 900px;
     }
     .listportifolios .row .card{
         display: block;
@@ -414,8 +475,20 @@ h4{
       margin-left: 0;
       text-align: center;
     }
-    .footer .footercontent{
+
+    .footer .footercontent .justigycontent{
         display: block;
+    }
+    .contactdetails{
+        width: 100%;
+    }
+    .contactform{
+        border-left: 0px solid gray;
+        border-top: 1px solid gray;
+        margin-top: 30px;
+    }
+    .contactform h3{
+        text-align: left;
     }
     
     .footer .footercontent form{

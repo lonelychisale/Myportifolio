@@ -41,7 +41,7 @@ function Dashboard() {
           <li>home</li>
           <li>about</li>
           <li>services</li>
-          <li>projects</li>
+          <li>experience</li>
           <li>contact</li>
         </ul>
         <h4 className='listcontrollers'><FaBars></FaBars></h4>
@@ -79,7 +79,7 @@ function Dashboard() {
 
     <h2>Software Development</h2>
     <ul>
-        <li>Proficient in multiple programming languages, including Python, Java, and C++, with a focus on building efficient and scalable software applications.</li>
+        <li>Proficient in multiple programming languages, including html, CSS, bootstrap, JavaScript, Node JS, React JS, PHP, Laravel, Django framework, Kivy python framework, spring boot framework,node JS, C#, with a focus on building efficient and scalable software applications.</li>
         <li>Experienced in full-stack development, from designing user interfaces to managing databases and server-side logic.</li>
         <li>Committed to writing clean, maintainable code and staying up-to-date with the latest industry trends and best practices.</li>
     </ul>
@@ -114,7 +114,7 @@ function Dashboard() {
                 <h2>web app</h2>
               </div>
               <div className='cardbody'>
-              <p>Utilizing cutting-edge technologies such as HTML5, CSS3, and JavaScript to create dynamic 
+              <p>Utilizing cutting-edge technologies such as HTML5, CSS3,php, and JavaScript to create dynamic 
                 and responsive web applications.</p>
               </div>
             </div>
@@ -126,7 +126,7 @@ function Dashboard() {
                 <h2>mobile app development</h2>
               </div>
               <div className='cardbody'>
-              <p>Building mobile applications for various platforms using HTML5, CSS3, 
+              <p>Building mobile applications for various platforms using Java, kotlin, 
                 and other relevant technologies.</p>
               </div>
             </div>
@@ -146,7 +146,7 @@ function Dashboard() {
             </div>
           </div>
 
-          <h1>cyber security</h1>
+          <h1 className='cyberservices'>cyber security</h1>
           <div className='row two'>
           <div className='card'>
               <div className='cardheader'>
@@ -183,6 +183,22 @@ function Dashboard() {
       </div>
     </div>
 
+    <div className='experiences'>
+      <div className='experiencescontents'>
+        <h1>experiences</h1>
+        <div className='row'>
+          <div className='card softwadevelopment'>
+            <h3><span>3 years</span> <br></br>as full stack developer</h3>
+          </div>
+          <div className='card cybersecurity'>
+            <h3>
+              <span>1 year</span><br></br> as cyber security personel
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div className='portifolio'>
       <div className='portifoliocontent'>
         <h3>what i did ?</h3>
@@ -196,8 +212,7 @@ function Dashboard() {
                 <h1>invertory management system</h1>
                 <div className='cardbody'>
                   <i>developed it for Farm Radio Trust</i><br></br>
-                  <p>Conducted market research and competitor analysis using SEMrush and SpyFu tools to identify trends and opportunities, resulting in data-driven marketing decisions.
-•	Implemented and managed Google Ads for schedul</p>
+                  <p>This system is a web based system , with interction to the database. It was developed for tracking in the flow is companies among employees and state of the items as time goes</p>
                 </div>
               </div>
             </div>
@@ -207,8 +222,7 @@ function Dashboard() {
                 <h1>USSD platform</h1>
                 <div className='cardbody'>
                   <i>developed it for Farm Radio Trust</i><br></br>
-                  <p>Conducted market research and competitor analysis using SEMrush and SpyFu tools to identify trends and opportunities, resulting in data-driven marketing decisions.
-•	Implemented and managed Google Ads for schedul</p>
+                  <p>This is also a web based system , with interaction to the databse. It was developed to fill in the gap on the limitation in the provision of agricultural extension services that the company provides due to limitations that some already existing digital paltforms had</p>
                 </div>
               </div>
             </div>
@@ -217,9 +231,8 @@ function Dashboard() {
               <div>
                 <h1>Student Portal</h1>
                 <div className='cardbody'>
-                  <i>developed it for Farm Radio Trust</i><br></br>
-                  <p>Conducted market research and competitor analysis using SEMrush and SpyFu tools to identify trends and opportunities, resulting in data-driven marketing decisions.
-•	Implemented and managed Google Ads for schedul</p>
+                  <i>developed it for Ekwendeni College of Health Science</i><br></br>
+                  <p>This is also a web based application ,with database interaction. It was mainly developed for management of students results</p>
                 </div>
               </div>
             </div>
@@ -232,37 +245,42 @@ function Dashboard() {
   <div className='footer'>
     <div>
       <h1>in need of me ?</h1>
-    <div className='footercontent'>
-      <div>
-        <h3>contact details</h3>
-        <i>email: lonelyfchisale@gmail.com</i><br></br>
-        <i>phone: +265 886 691 384 / +265 988 170 023</i>
+      <div className='footercontent'>
+        <div className='justigycontent'>
+          <div className='contactdetails'>
+            <h3>reach me on:</h3>
+            <h5>
+              <i>email    : lonelyfchisale@gmail.com</i><br></br>
+              <i>tel      : +265 886 691384 / +265 988 170 023</i><br></br>
+              <i>linkedin : </i>
+            </h5>
+          </div>
+          <div className='contactform'>
+            <h3>send message</h3>
+            <form>
+              <div className='formgroup'>
+                <label>full name</label>
+                <input type='text'></input>
+              </div>
+              <div className='formgroup'>
+                <label>email adress</label>
+                <input type='email'></input>
+              </div>
+              <div className='formgroup'>
+                <label>email subject</label>
+                <input type='text'></input>
+              </div>
+              <div className='formgroup'>
+                <label>message</label>
+                <textarea></textarea>
+              </div>
+              <div className='formgroup'>
+                <input type='submit' value='send email'></input>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-
-      <div className='contactform'>
-        <form>
-          <h1>send message</h1>
-          <div className='formgroup'>
-            <label>email</label>
-            <input type='text'></input>
-          </div>
-
-          <div className='formgroup'>
-            <label>subject</label>
-            <input type='text'></input>
-          </div>
-
-          <div className='formgroup'>
-            <label>message</label>
-            <textarea></textarea>
-          </div>
-
-          <div className='formgroup'>
-            <input type='submit' value='send message'></input>
-          </div>
-        </form>
-      </div>
-    </div>
     </div>
   </div>
  
