@@ -1,5 +1,6 @@
 body{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 .dashboard{
     background-color: whitesmoke;
@@ -46,6 +47,7 @@ body{
    text-transform: capitalize;
    display: flex;
 }
+
 .dashboard .headerdiv .header ul li{
     list-style-type: none;
     margin-left: 20px;
@@ -53,12 +55,23 @@ body{
     color: gray;
     font-weight: 900;
 }
+.dashboard .headerdiv .header ul li a:hover{
+    color: wheat;
+}
+a{
+    text-decoration: none;
+    color: gray;
+}
+
 .dashboard .headerdiv .header ul li:last-child{
     background-color: gray;
     padding: 10px;
     color: white;
     padding-left: 15px;
     padding-right: 15px;
+}
+.dashboard .headerdiv .header ul li:last-child a{
+    color: white;
 }
 h4{
     position: absolute;
@@ -95,6 +108,9 @@ h4{
     font-family: sans-serif;
     border-radius: 10px;
     
+}
+.headercontents div:nth-child(2) h3 a{
+    color: white;
 }
 .headercontents h1{
     text-transform: capitalize;
@@ -393,15 +409,25 @@ h4{
     padding: 10px;
     border: none;
 }
+.textanimation {
+    font-size: 30px; /* Font size */
+    animation: appearText 1s linear; /* Animation duration and easing */
+  }
+  @keyframes appearText {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
 @media screen and (max-width:900px) {
     .dashboard .headerdiv{
         height: 80vh;
     }
     .content{
         margin-top: 85vh;
-    }
-    .dashboard .headerdiv .header ul{
-        display: none;
     }
     .headercontents{
         display: block;
@@ -504,6 +530,29 @@ h4{
     }
     input[type='submit']{
         width: auto;
+    }
+    .dashboard .headerdiv .header ul.menu {
+        display: none; /* Hide the menu by default */
+        position: absolute;
+        right: 0;
+        margin-right: 11px;
+        margin-top: 78px;
+        text-transform: capitalize;
+        flex-direction: column; /* Display items in a column for mobile */
+        background-color: white; /* Add a background color */
+        box-shadow: 0px 0px 20px 0px wheat;
+        z-index: 1000;
+        padding: 10px;
+        width: 200px; /* Adjust the width as needed */
+    }
+    .dashboard .headerdiv .header ul.menu li{
+        margin-top: 10px;
+        border-bottom: 1px solid gray;
+        padding: 10px;
+    }
+
+    .dashboard .headerdiv .header ul.menu.show-menu {
+        display: flex; /* Show the menu when the class "show-menu" is applied */
     }
     
 }

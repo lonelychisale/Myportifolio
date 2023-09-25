@@ -3,11 +3,17 @@ import image from '../../images/img2.jpg'
 import ussdimage from '../../images/ussd2.jpg'
 import invetoryimage from '../../images/images1.jpg'
 import portalimage from '../../images/images3.jpg'
+import TextAnimation from '../textheader';
 import {FaDesktop,FaWpforms,FaCss3Alt, FaLock,FaUserSecret,FaRegIdBadge,FaOm,FaBars,FaRegFolder,FaRegFileAlt,FaWarehouse,FaCoins,FaCaretDown,FaBell, FaAdjust} from 'react-icons/fa';
 import { useState, useEffect } from 'react';
 
 function Dashboard() {
   const [scrolling, setScrolling] = useState(false);
+  const [isMenuVisible, setIsMenuVisible] = useState(false); // Add state for menu visibility
+
+  const toggleMenu = () => {
+    setIsMenuVisible(!isMenuVisible);
+  };
 
   // Add a scroll event listener
   useEffect(() => {
@@ -31,32 +37,33 @@ function Dashboard() {
 
   // Define CSS classes based on the scrolling state
   const headerClass = scrolling ? 'header scrolled' : 'header';
+  const menuClass = isMenuVisible ? 'menu show-menu' : 'menu'; // Add a class for menu visibility
 
   return (
     <div className="dashboard">
-    <div className='headerdiv'>
-      <div className={headerClass}>
-        <h1>mypotfolio</h1>
-        <ul>
-          <li>home</li>
-          <li>about</li>
-          <li>services</li>
-          <li>experience</li>
-          <li>contact</li>
-        </ul>
-        <h4 className='listcontrollers'><FaBars></FaBars></h4>
-      </div>
+    <div className="headerdiv">
+        <div className={headerClass}>
+          <h1>mypotfolio</h1>
+          <ul className={`menu ${isMenuVisible ? 'show-menu' : ''}`}>
+            <li><a href='#'>home</a></li>
+            <li><a href='#about'>about</a></li>
+            <li><a href='#services'>services</a></li>
+            <li><a href='#experiences'>experience</a></li>
+            <li><a href='#contact'>contact</a></li>
+          </ul>
+          <h4 className='listcontrollers' onClick={toggleMenu}><FaBars></FaBars></h4>
+        </div>
 
       <div className='headercontents'>
       <div>
-    <h1>Hello, I'm lonely Chisale</h1>
+    <h1><TextAnimation /></h1>
     <p>I'm a dedicated professional with expertise in cybersecurity and software development.</p>
     <p>My mission is to create innovative solutions that ensure the utmost security of computer systems and information, safeguarding them against cyber threats.</p>
 </div>
 
 
         <div>
-            <h3>my projects</h3>
+            <h3><a href='#projects'> my projects</a></h3>
         </div>
 
       </div>
@@ -70,7 +77,7 @@ function Dashboard() {
       </div>
     
       
-      <div>
+      <div id='about'>
         <h3>who am i ?</h3>
         <h1>about</h1>
         <p>
@@ -100,7 +107,7 @@ function Dashboard() {
       
     </div>
 
-    <div className='services'> 
+    <div className='services' id='services'> 
       <div className='servicesconted'>
         <h3>what i do ?</h3>
         <h1>services</h1>
@@ -183,7 +190,7 @@ function Dashboard() {
       </div>
     </div>
 
-    <div className='experiences'>
+    <div className='experiences' id='experiences'>
       <div className='experiencescontents'>
         <h1>experiences</h1>
         <div className='row'>
@@ -199,7 +206,7 @@ function Dashboard() {
       </div>
     </div>
 
-    <div className='portifolio'>
+    <div className='portifolio' id='projects'>
       <div className='portifoliocontent'>
         <h3>what i did ?</h3>
         <h1>projects</h1>
@@ -242,7 +249,7 @@ function Dashboard() {
     </div>
   </div>
 
-  <div className='footer'>
+  <div className='footer' id='contact'>
     <div>
       <h1>in need of me ?</h1>
       <div className='footercontent'>
